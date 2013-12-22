@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="span3">
+        <div class="pa-sidebar well well-small">
+            <ul class="nav nav-list">
+                <li ng-class="{ active: $state.includes('app.logictemplates') || $state.includes('app.list')}"><a ui-sref="app.logictemplates">Logic Template</a></li>
+                <li ng-class="{ active: $state.includes('app.softtemplates')}"><a ui-sref="app.softtemplates">Software</a></li>
+            </ul>
+        </div>
+    </div>
+    <div ui-view class="span9" ng-animate="{enter:'fade-enter'}"></div>
+</div>
